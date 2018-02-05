@@ -80,7 +80,7 @@ endif(NOT bananapi-r2)
 
 #bananapi-r2 ubuntu 16.04 has wrong libusb-1.0.so path
 #when compiling on bananapi-r2 run cmake with -DBananapi-r2=YES argument like so:
-#  $(builddir)/cmake -DBananapi-r2=YES ../
+#  $(builddir)/cmake -Dbananapi-r2=YES ../
 if(bananapi-r2)
     message(STATUS "DEBUG --->>>> BANANAPI")
     find_library(LIBUSB_1_LIBRARY
